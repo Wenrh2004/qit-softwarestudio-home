@@ -91,7 +91,7 @@ export function Menu() {
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <a href="#projects" className={navigationMenuTriggerStyle()}>
+              <a href="/#projects" className={navigationMenuTriggerStyle()}>
                 项目展示
               </a>
             </NavigationMenuLink>
@@ -99,7 +99,7 @@ export function Menu() {
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <a href="#contact" className={navigationMenuTriggerStyle()}>
+              <a href="/#contact" className={navigationMenuTriggerStyle()}>
                 联系我们
               </a>
             </NavigationMenuLink>

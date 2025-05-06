@@ -363,42 +363,246 @@ import SectionHeader from "@/components/home/SectionHeader.astro";
 
         <div class="grid md:grid-cols-3 gap-6 mt-8">
           <div
-            class="border border-border rounded-lg p-6 bg-card/50 hover:bg-card/80 transition-colors"
+            class="bg-card rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow"
           >
             <h4 class="text-lg font-semibold mb-3 text-primary">
               架构设计原则
             </h4>
-            <ul class="space-y-2 text-muted-foreground">
-              <li>• MVC架构</li>
-              <li>• DDD领域驱动设计</li>
-              <li>• 六边形架构</li>
-              <li>• 微服务架构</li>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                MVC架构
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                DDD领域驱动设计
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                六边形架构
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                微服务架构
+              </li>
             </ul>
           </div>
 
           <div
-            class="border border-border rounded-lg p-6 bg-card/50 hover:bg-card/80 transition-colors"
+            class="bg-card rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow"
           >
             <h4 class="text-lg font-semibold mb-3 text-primary">开发流程</h4>
-            <ul class="space-y-2 text-muted-foreground">
-              <li>• 敏捷开发</li>
-              <li>• 持续集成/持续部署</li>
-              <li>• 测试驱动开发</li>
-              <li>• 代码审查</li>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                敏捷开发
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                持续集成/持续部署
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                测试驱动开发
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                代码审查
+              </li>
             </ul>
           </div>
 
           <div
-            class="border border-border rounded-lg p-6 bg-card/50 hover:bg-card/80 transition-colors"
+            class="bg-card rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow"
           >
             <h4 class="text-lg font-semibold mb-3 text-primary">
               代码质量保障
             </h4>
-            <ul class="space-y-2 text-muted-foreground">
-              <li>• 高内聚、低耦合</li>
-              <li>• 自动化测试</li>
-              <li>• 代码规范</li>
-              <li>• 性能优化</li>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                高内聚、低耦合
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                自动化测试
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                代码规范
+              </li>
+              <li class="flex items-center">
+                <span class="bg-primary/10 text-primary rounded-full p-1 mr-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </span>
+                性能优化
+              </li>
             </ul>
           </div>
         </div>
@@ -570,42 +774,42 @@ import SectionHeader from "@/components/home/SectionHeader.astro";
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
           <div
-            class="border border-border rounded-lg p-4 text-center hover:bg-accent/50 transition-colors"
+            class="bg-card rounded-lg p-5 text-center shadow-sm hover:shadow-md transition-shadow"
           >
             <h4 class="font-semibold mb-2">OpenEuler RISC-V</h4>
             <p class="text-sm text-muted-foreground">开源操作系统社区</p>
           </div>
 
           <div
-            class="border border-border rounded-lg p-4 text-center hover:bg-accent/50 transition-colors"
+            class="bg-card rounded-lg p-5 text-center shadow-sm hover:shadow-md transition-shadow"
           >
             <h4 class="font-semibold mb-2">Spring Cloud Alibaba</h4>
             <p class="text-sm text-muted-foreground">微服务框架</p>
           </div>
 
           <div
-            class="border border-border rounded-lg p-4 text-center hover:bg-accent/50 transition-colors"
+            class="bg-card rounded-lg p-5 text-center shadow-sm hover:shadow-md transition-shadow"
           >
             <h4 class="font-semibold mb-2">CloudWeGo</h4>
             <p class="text-sm text-muted-foreground">云原生中间件</p>
           </div>
 
           <div
-            class="border border-border rounded-lg p-4 text-center hover:bg-accent/50 transition-colors"
+            class="bg-card rounded-lg p-5 text-center shadow-sm hover:shadow-md transition-shadow"
           >
             <h4 class="font-semibold mb-2">Docker</h4>
             <p class="text-sm text-muted-foreground">容器化平台</p>
           </div>
 
           <div
-            class="border border-border rounded-lg p-4 text-center hover:bg-accent/50 transition-colors"
+            class="bg-card rounded-lg p-5 text-center shadow-sm hover:shadow-md transition-shadow"
           >
             <h4 class="font-semibold mb-2">Nunu</h4>
             <p class="text-sm text-muted-foreground">Go应用脚手架</p>
           </div>
 
           <div
-            class="border border-border rounded-lg p-4 text-center hover:bg-accent/50 transition-colors"
+            class="bg-card rounded-lg p-5 text-center shadow-sm hover:shadow-md transition-shadow"
           >
             <h4 class="font-semibold mb-2">Create-Neat</h4>
             <p class="text-sm text-muted-foreground">前端项目生成器</p>
