@@ -56,9 +56,9 @@ export function Menu() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>关于我们</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="no-shadow">关于我们</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ul className="flex flex-col gap-3 p-4 w-[98%] mx-auto">
                 {aboutItems.map((item) => (
                   <ListItem
                     key={item.title}
@@ -73,9 +73,9 @@ export function Menu() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger>团队优势</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="no-shadow">团队优势</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ul className="flex flex-col gap-3 p-4 w-[98%] mx-auto">
                 {advantageItems.map((item) => (
                   <ListItem
                     key={item.title}
@@ -91,7 +91,7 @@ export function Menu() {
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <a href="/#projects" className={navigationMenuTriggerStyle()}>
+              <a href="/#projects" className={cn(navigationMenuTriggerStyle(), "no-shadow")}>
                 项目展示
               </a>
             </NavigationMenuLink>
@@ -99,7 +99,7 @@ export function Menu() {
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <a href="/#contact" className={navigationMenuTriggerStyle()}>
+              <a href="/#contact" className={cn(navigationMenuTriggerStyle(), "no-shadow")}>
                 联系我们
               </a>
             </NavigationMenuLink>
@@ -117,23 +117,23 @@ const ListItem = React.forwardRef<
   React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {
   return (
-    <li className="row-span-3">
+    <li className="w-full">
       <NavigationMenuLink asChild>
         <a
           ref={ref}
           className={cn(
-            "flex h-full w-full select-none flex-col justify-between rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "flex w-full select-none flex-col justify-between rounded-md bg-gradient-to-b from-muted/50 to-muted p-3 no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}
         >
-          <div className="mb-2 mt-4 text-lg font-medium truncate">{title}</div>
-          <p className="text-sm leading-tight text-muted-foreground line-clamp-3 overflow-hidden">
+          <div className="mb-1 text-base font-medium break-words whitespace-normal">{title}</div>
+          <p className="text-xs leading-tight text-muted-foreground break-words whitespace-normal">
             {children}
           </p>
         </a>
       </NavigationMenuLink>
     </li>
   );
-});
+})
 ListItem.displayName = "ListItem";

@@ -56,22 +56,5 @@ import Layout from "../layouts/Layout.astro";
     });
   }
 
-  // 添加滚动事件监听器，控制导航栏阴影效果
-  document.addEventListener("DOMContentLoaded", () => {
-    const nav = document.querySelector("nav");
-
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        nav?.classList.add("shadow-md");
-        nav?.classList.remove("shadow-sm");
-      } else {
-        nav?.classList.remove("shadow-md");
-        nav?.classList.add("shadow-sm");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    // 初始化时也执行一次
-    handleScroll();
-  });
+  // 移除导航栏阴影效果的控制代码
 </script>

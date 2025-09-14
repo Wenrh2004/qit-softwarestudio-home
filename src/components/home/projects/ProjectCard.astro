@@ -9,8 +9,8 @@ interface Props {
 const { title, description, icon, technologies } = Astro.props;
 ---
 
-<div class="bg-card rounded-lg overflow-hidden border border-border">
-  <div class="h-48 bg-primary/10 flex items-center justify-center">
+<div class="bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-border">
+  <div class="h-48 overflow-hidden">
     <Fragment set:html={icon} />
   </div>
   <div class="p-4">
